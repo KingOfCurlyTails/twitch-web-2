@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectorRef, Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'web2';
+  title = '';
+  setTitle(value: string) {
+    this.title = value
+  }
+  constructor(private cdRef: ChangeDetectorRef) { }
+
+  ngAfterViewChecked() {
+    this.cdRef.detectChanges();
+  }
 }

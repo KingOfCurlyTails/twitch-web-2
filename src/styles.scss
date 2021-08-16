@@ -1,17 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
 .header {
-    font-family: 'Courier New', monospace;
-    font-size: 50px;
+  font-family: 'Courier New', monospace;
+  font-size: 50px;
 }
 
 .top-line {
-    background-color: #003866;
-    height: 50px;
-    width: 100%;
+  background-color: #003866;
+  height: 50px;
+  width: 100%;
 }
+
 .body {
-    background-color: #007BE0;
-    height: 100% !important;
-    width: 100% !important;
+  background-color: #007BE0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
-html,body{margin:0;padding:0}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}

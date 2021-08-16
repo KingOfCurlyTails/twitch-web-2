@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { MetadataService } from 'src/app/services/metadata.service';
 
 @Component({
   selector: 'app-top-line',
@@ -7,12 +8,13 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class TopLineComponent implements OnInit {
 
-  @Input() title: string = "";
+ public title = "";
 
-  constructor() { }
+  constructor(private metaDataSvc: MetadataService) { }
 
   ngOnInit(): void {
     console.log(this.title)
+    this.metaDataSvc.title$.subscribe((x)=>{this.title = x})
   }
 
   triggerMenu() {

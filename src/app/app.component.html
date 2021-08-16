@@ -1,4 +1,4 @@
 <div fxLayout="column" fxLayoutGap="10px" fxFlex="0 0 calc(100%)" class="body">
-  <app-top-line [title]="title" style="width: 100%"></app-top-line>
-  <app-home (title)="setTitle($event)" style="height: 100%;"></app-home>
+  <app-top-line class="top-line"></app-top-line>
+  <router-outlet></router-outlet>
 </div>

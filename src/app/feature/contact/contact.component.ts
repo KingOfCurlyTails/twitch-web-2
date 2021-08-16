@@ -2,16 +2,16 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { MetadataService } from 'src/app/services/metadata.service';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-contact',
+  templateUrl: './contact.component.html',
+  styleUrls: ['./contact.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class ContactComponent implements OnInit {
 
   constructor(private metaDataSvc: MetadataService) { }
 
   ngOnInit(): void {
-    this.metaDataSvc.setTitle("Home");
+    this.metaDataSvc.setTitle("Kontakt");
   }
 
 }

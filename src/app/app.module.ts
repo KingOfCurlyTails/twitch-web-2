@@ -1,19 +1,20 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './feature/home/home.component';
 import { TopLineComponent } from './temp/top-line/top-line.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { ContentPageComponent } from './page-templates/content-page/content-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    TopLineComponent
+    TopLineComponent,
+    routingComponents,
+    ContentPageComponent
   ],
   imports: [
     BrowserModule,

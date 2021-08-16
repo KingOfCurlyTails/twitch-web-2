@@ -6,29 +6,30 @@
 
 .top-line {
   background-color: #003866;
-  height: 75px;
-  width: 600px;
+  height: 60px;
+  width: 400px;
+  padding: 10px 10px 10px 10px;
   align-self: center !important;
   border-radius: 0 0 15px 15px;
 }
 
 .h1 {
-    font-family: 'Courier New', monospace;
-    font-size: 30px;
-    font-weight: 600;
-    padding-left: 60px;
+  font-family: 'Courier New', monospace;
+  font-size: 30px;
+  font-weight: 600;
+  padding-left: 20px;
 }
 
 .text {
-    font-family: 'Courier New', monospace;
-    font-size: 20px;
-    padding-left: 100px;
-    overflow:hidden;
+  font-family: 'Courier New', monospace;
+  font-size: 20px;
+  padding-left: 30px;
+  overflow: hidden;
 }
 
 .icon-fix {
-    vertical-align: bottom;
-    margin-left: -10px;
+  vertical-align: bottom;
+  margin-left: -10px;
 }
 
 .body {
@@ -41,7 +42,7 @@
 }
 
 .active {
-    background-color: grey;
+  background-color: grey;
 }
 
 html,

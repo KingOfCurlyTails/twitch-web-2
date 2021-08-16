@@ -1,9 +1,10 @@
 <app-content-page title="Home">
   <div fxLayout="column" fxLayoutGap="30px" fxFlex="0 0 calc(100%)" fxLayoutAlign="center center">
-    <mat-card class="mat-elevation-z10" style="width: 80%">
+    <mat-card class="mat-elevation-z10" style="width: 85%;" fxLayoutGap="5px" fxLayout="column">
       <mat-card-title class="h1">
         About Me:
       </mat-card-title>
+      <mat-divider inset="true"></mat-divider>
       <mat-card-content class="text">
         <span style="font-weight: 600;">Name:</span> KCT <br />
         <span style="font-weight: 600;">Alter:</span> 17 <br />
@@ -22,10 +23,11 @@
         </div>
       </mat-card-content>
     </mat-card>
-    <mat-card class="mat-elevation-z10" style="width: 80%">
+    <mat-card class="mat-elevation-z10" style="width: 85%" fxLayoutGap="5px" fxLayout="column">
       <mat-card-title class="h1">
         FAQ:
       </mat-card-title>
+      <mat-divider inset="true"></mat-divider>
       <mat-card-content class="text">
         <div style="font-weight: 600;">Woher kommt der Name "KingOfCurlyTails" <br /></div>
         Ich liebe einfach den Charakter "King Julien" aus Madagaskar. <br />
@@ -39,5 +41,4 @@
       </mat-card-content>
     </mat-card>
   </div>
-
 </app-content-page>

@@ -1,19 +1,25 @@
 <app-content-page title="Kontakt">
   <div fxLayout="column" fxLayoutGap="30px" fxFlex="0 0 calc(100%)" fxLayoutAlign="center center">
-    <mat-card class="mat-elevation-z4" style="width: 80%">
-      <mat-card-title class="h1" style="padding-top: 20px;">
+    <mat-card class="mat-elevation-z4" style="width: 85%;" fxLayoutGap="5px" fxLayout="column">
+      <mat-card-title class="h1">
         Contact:
       </mat-card-title>
-      <mat-card-content class="text">
-        <span style="font-weight: 600;">Discord:</span> maurice#8993 / <a
-          href="https://discord.gg/bZ8Ur2Y">Server</a><br />
-        <span style="font-weight: 600;">Youtube:</span><a
-          href="https://www.youtube.com/channel/UCXnpFVzLgreUWmevmSzIluA">
-          Best of the Boy's </a><br />
-        <span style="font-weight: 600;">Twitch:</span><a href="https://www.twitch.tv/kingofcurlytails">
-          KingOfCurlyTails </a><br />
-        <span style="font-weight: 600;">E-mail:</span> kingofcurlytails@gmx.net <br />
-      </mat-card-content>
-    </mat-card>
-  </div>
+      <mat-divider inset="true"></mat-divider>
+      <mat-card-content>
+          <div class="contacts" fxLayout="row" fxLayoutAlign="space-between center">
+              <a href="https://discord.gg/bZ8Ur2Y">
+                <img style="width: 100px; height: 100px;" src="assets/pictures/brands/discord.png">
+            </a>
+            <a href="https://www.twitch.tv/kingofcurlytails">
+                <img style="width: 100px; height: 100px;" src="assets/pictures/brands/twitch.png">
+            </a>
+            <a href="https://www.youtube.com/channel/UCXnpFVzLgreUWmevmSzIluA">
+                <img style="width: 100px; height: 100px;" src="assets/pictures/brands/youtube.png">
+            </a>
+        </div>
+        <mat-divider inset="true"></mat-divider>
+       <div class="e-mail"><span style="font-weight: 600;">E-mail:</span> kingofcurlytails@gmx.net </div>
+    </mat-card-content>
+</mat-card>
+</div>
 </app-content-page>

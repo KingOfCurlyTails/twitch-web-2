@@ -32,22 +32,14 @@
   margin-left: -10px;
 }
 
-.body {
-  background-color: #007BE0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
-
 .active {
-  background-color: grey;
+    background-color: grey;
 }
 
 html,
 body {
-  margin: 0;
+    background-color: #007BE0;
+    margin: 0;
+    margin-bottom: 20px;
   padding: 0;
-  height: 100%;
 }
